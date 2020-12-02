@@ -1,0 +1,398 @@
+
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+  Mixins available:
+    -   background-gradient     - arguments: Start Color: #3C3C3C, End Color: #999999
+    -   background-size         - arguments: Width: 100%, Height: 100%
+    -   border-radius           - arguments: Radius: 5px
+    -   border-radius-separate  - arguments: Top Left: 5px, Top Left: 5px, Bottom Left: 5px, Bottom Right: 5px
+    -   box                     - arguments: Orientation: horizontal, Pack: center, Align: center
+    -   box-rgba                - arguments: R: 60, G: 3, B: 12, Opacity: 0.23, Color: #3C3C3C
+    -   box-shadow              - arguments: X: 2px, Y: 2px, Blur: 5px, Color: rgba(0,0,0,.4)
+    -   box-sizing              - arguments: Type: border-box
+    -   columns                 - arguments: Count: 3, Gap: 10
+    -   double-borders          - arguments: Color One: #3C3C3C, Color Two: #999999, Radius: 0
+    -   flex                    - arguments: Value: 1
+    -   flip                    - arguments: ScaleX: -1
+    -   font-face               - arguments: Font Family: myFont, Eot File Src: myFont.eot, Woff File Src: myFont.woff, Ttf File Src: myFont.ttf
+    -   opacity                 - arguments: Opacity: 0.5
+    -   outline radius          - arguments: Radius: 5px
+    -   resize                  - arguments: Direction: both
+    -   rotate                  - arguments: Degree: 0, M11: 0, M12: 0, M21: 0, M22: 0
+    CSS Matrix Rotation Calculator http://www.boogdesign.com/examples/transforms/matrix-calculator.html
+    -   text-shadow             - arguments: X: 2px, Y: 2px, Blur: 5px, Color: rgba(0,0,0,.4)
+    -   transform               - arguments: Parameters: null
+    -   transition              - arguments: What: all, Length: 1s, Easing: ease-in-out
+    -   triple-borders          - arguments: Color One: #3C3C3C, Color Two: #999999, Color Three: #000000, Radius: 0
+
+------------------------------------------------------------- */
+/* BACKGROUND GRADIENT */
+/* BACKGROUND SIZE */
+/* BORDER RADIUS */
+/* BOX */
+/* BOX RGBA */
+/* BOX SHADOW */
+/* BOX SIZING */
+/* COLUMNS */
+/* DOUBLE BORDERS */
+/* FLEX */
+/* FLIP */
+/* FONT FACE */
+/* OPACITY */
+/* OUTLINE RADIUS */
+/* RESIZE */
+/* ROTATE*/
+/* TEXT SHADOW */
+/* TRANSFORM  */
+/* TRANSITION */
+/* TRIPLE BORDERS */
+/**
+ *
+ */
+/* line 49, ../scss/scss.scss */
+.sj_none {
+  display: none;
+}
+
+/* ---------------------------------------
+    Common 共用
+--------------------------------------- */
+/* line 57, ../scss/scss.scss */
+.container {
+  width: 100%;
+  max-width: 1160px;
+  padding: 0 30px;
+}
+
+/* ---------------------------------------
+    Header
+--------------------------------------- */
+/* line 67, ../scss/scss.scss */
+.header {
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+}
+
+/* ---------------------------------------
+    index product
+--------------------------------------- */
+/* line 76, ../scss/scss.scss */
+.main-pro img {
+  width: 100%;
+}
+
+/* line 82, ../scss/scss.scss */
+.contact .google-map {
+  margin-bottom: 30px;
+}
+
+/* ---------------------------------------
+    Footer
+--------------------------------------- */
+/* line 90, ../scss/scss.scss */
+.footer {
+	padding-top: 20px;
+	padding-right: 0;
+	padding-bottom: 20px;
+	padding-left: 0;
+}
+/* line 93, ../scss/scss.scss */
+.footer .headline h2 {
+  color: #dadada;
+  border-bottom: 2px solid #e74c3c;
+  font-size: 23px;
+}
+/* line 97, ../scss/scss.scss */
+.footer .address {
+  line-height: 30px;
+  margin: 8px 0;
+}
+/* line 100, ../scss/scss.scss */
+.footer span.space {
+  margin-left: 25px;
+}
+/* line 104, ../scss/scss.scss */
+.footer ul.list-unstyled.latest-list li {
+  padding: 5px 0 10px;
+}
+/* line 107, ../scss/scss.scss */
+.footer ul.list-unstyled.latest-list a {
+  color: #dadada;
+}
+/* line 110, ../scss/scss.scss */
+.footer ul.list-unstyled.latest-list small {
+  color: #aaa;
+}
+
+/* line 117, ../scss/scss.scss */
+.footer-logo {
+  margin: 14px 0 24px;
+}
+/* line 120, ../scss/scss.scss */
+.footer-logo h2 a {
+  color: #fff;
+  font-size: 17px;
+  transition: all 0.5s ease;
+  font-size: 21px;
+  line-height: 24px;
+}
+/* line 125, ../scss/scss.scss */
+.footer-logo h2 a:hover {
+  color: #999;
+}
+
+/* line 132, ../scss/scss.scss */
+.footer-intro p {
+  font-size: 16px;
+}
+
+/* line 137, ../scss/scss.scss */
+.contact-info span {
+  display: inline-block;
+}
+/* line 140, ../scss/scss.scss */
+.contact-info a {
+  color: #ccc;
+}
+/* line 142, ../scss/scss.scss */
+.contact-info a:hover {
+  color: #999;
+}
+
+/* line 148, ../scss/scss.scss */
+.copyright {
+  padding: 0 15px;
+}
+/* line 150, ../scss/scss.scss */
+.copyright a {
+  color: #ccc;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 153, ../scss/scss.scss */
+.copyright a:hover {
+  color: #999;
+}
+
+@media (max-width: 1170px) {
+  /* line 161, ../scss/scss.scss */
+  .header .container {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 168, ../scss/scss.scss */
+  .container {
+    padding: 0 30px;
+  }
+
+  /* line 171, ../scss/scss.scss */
+  .header {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+  }
+  /* line 178, ../scss/scss.scss */
+  .header .container {
+    padding: 0 30px;
+  }
+  /* line 181, ../scss/scss.scss */
+  .header .navbar-header {
+    margin: 5px 0;
+  }
+  /* line 184, ../scss/scss.scss */
+  .header .navbar-brand {
+    margin: 10px 0 0;
+  }
+
+  /* line 189, ../scss/scss.scss */
+  .carousel, .breadcrumbs {
+    margin-top: 0px;
+  }
+
+  /* ---------------------------------------
+      index product
+  --------------------------------------- */
+  /* line 197, ../scss/scss.scss */
+  .main-pro .headline {
+    margin: 0 0 25px 0;
+  }
+  /* line 200, ../scss/scss.scss */
+  .main-pro .row {
+    margin: 0;
+  }
+
+  /* line 204, ../scss/scss.scss */
+  .main-pro-item {
+    background-size: 100% !important;
+    min-height: 300px;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  /* line 209, ../scss/scss.scss */
+  .main-pro-item img {
+    display: none;
+  }
+  /* line 212, ../scss/scss.scss */
+  .main-pro-item button {
+    display: none;
+  }
+  /* line 216, ../scss/scss.scss */
+  .main-pro-item:hover .title_bg {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  /* line 220, ../scss/scss.scss */
+  .main-pro-item:hover .title-info:before, .main-pro-item:hover .title-info:after {
+    right: 20px;
+  }
+
+  /* line 226, ../scss/scss.scss */
+  .main-pro-item-title {
+    position: absolute;
+    width: 100%;
+    height: 86px;
+    left: 0;
+    bottom: 0;
+  }
+  /* line 232, ../scss/scss.scss */
+  .main-pro-item-title .title_bg {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100%;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  /* line 239, ../scss/scss.scss */
+  .main-pro-item-title .title-info {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    padding: 0 30px;
+  }
+  /* line 247, ../scss/scss.scss */
+  .main-pro-item-title .title-info h2 {
+    color: #3398cc;
+    margin: 0 0 5px 0;
+    min-height: auto;
+  }
+  /* line 252, ../scss/scss.scss */
+  .main-pro-item-title .title-info p {
+    color: #ccc;
+    margin-bottom: 0;
+  }
+  /* line 256, ../scss/scss.scss */
+  .main-pro-item-title .title-info:before, .main-pro-item-title .title-info:after {
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+    content: '';
+    background: rgba(255, 255, 255, 0.8);
+    width: 8px;
+    height: 2px;
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    filter: progid:DXImageTransform.Microsoft.Matrix( M11=0, M12=0, M21=0, M22=0, sizingMethod='auto expand');
+    zoom: 1;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  /* line 267, ../scss/scss.scss */
+  .main-pro-item-title .title-info:after {
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    filter: progid:DXImageTransform.Microsoft.Matrix( M11=0, M12=0, M21=0, M22=0, sizingMethod='auto expand');
+    zoom: 1;
+    bottom: 20px;
+  }
+
+  /* ---------------------------------------
+      Product 產品總覽頁
+  --------------------------------------- */
+  /* line 278, ../scss/scss.scss */
+  .allproduct .row {
+    margin: 0;
+  }
+  /* line 280, ../scss/scss.scss */
+  .allproduct .row .col-md-3 {
+    padding: 0;
+  }
+  /* line 285, ../scss/scss.scss */
+  .allproduct .main-pro-item img {
+    display: block;
+  }
+
+  /* ---------------------------------------
+      Footer
+  --------------------------------------- */
+  /* line 295, ../scss/scss.scss */
+  .footer .row {
+    margin: 0 -15px;
+  }
+  /* line 298, ../scss/scss.scss */
+  .footer .sitemap {
+    display: none;
+  }
+
+  /* line 303, ../scss/scss.scss */
+  .copyright {
+    padding: 0;
+  }
+}
+@media (max-width: 480px) {
+  /* ---------------------------------------
+      index product
+  --------------------------------------- */
+  /* line 312, ../scss/scss.scss */
+  .main-pro-item {
+    min-height: 220px;
+  }
+}
+@media (max-width: 414px) {
+  /* ---------------------------------------
+      header
+  --------------------------------------- */
+  /* line 322, ../scss/scss.scss */
+  .navbar-header h2 {
+	font-size: 21px;
+	margin-top: -8px;
+  }
+  /* line 325, ../scss/scss.scss */
+  .navbar-header h2 + h2 {
+    font-size: 16px;
+    margin-top: -25px;
+    letter-spacing: 2.5px;
+  }
+}
